@@ -52,19 +52,6 @@ export class App extends Component {
     if (prevValue !== nextValue || prevPage !== nextPage) {
       this.getnImage();
     }
-    //   this.setState({ loading: true, loadMore: false });
-    //   fetchGallery(nextValue, nextPage)
-    //     .then(({ hits, totalHits }) =>
-    //       this.setState(({ images }) => ({
-    //         images: images ? [...images, ...hits] : hits,
-    //         loadMore: nextPage < Math.ceil(totalHits / 12) ? true : false,
-    //       }))
-    //     )
-    //     .catch(error => {
-    //       return error;
-    //     })
-    //     .finally(this.setState({ loading: false }));
-    // }
   }
 
   addValue = value => {
